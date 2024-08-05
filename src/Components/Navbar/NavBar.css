@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar-item {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .title {
+    color: red;
+  }
+  
+  .price-1 {
+    color: green;
+  }
+  
+  .price-2 {
+    color: red;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .price-1,
+    .price-2 {
+      display: none;
+    }
+  }
+  
