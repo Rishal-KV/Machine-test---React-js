@@ -1,10 +1,11 @@
 import { FC } from "react";
+import { CardProps } from "../../Interface/props";
 
-const Card : FC<any> = (props:any) => {
+const Card : FC<CardProps> = ({imgUrl}) => {
     return (
         <div className="card">
-        <img src={ props.imgUrl } 
-          alt={ props.alt || 'Image' } />
+        <img src={ imgUrl } 
+          alt= 'Image'  />
        
       </div>
     )

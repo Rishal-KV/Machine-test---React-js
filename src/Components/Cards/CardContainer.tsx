@@ -1,12 +1,16 @@
 import { FC } from "react";
 import Card from "./Card";
-const CardContainer : FC<any> = (props:any) => {
+import { CardProps } from "../../Interface/props";
+interface Cards {
+        cardProps : CardProps[]
+}
+const CardContainer : FC<Cards> = ({cardProps}) => {
     return (
         <div className="cards-container">
     {
-      props.cards.map((card:any) => (
-        <Card key={card.id}  title={ card.title }
-          content={ card.content }
+      cardProps.map((card:any) => (
+        <Card key={card.id} 
+          
           imgUrl={ card.imgUrl } />
       ))
     }

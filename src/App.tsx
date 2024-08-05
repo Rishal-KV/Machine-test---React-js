@@ -26,8 +26,7 @@ function App() {
     },
     {
       id: 5,
-      title: "CARD 5",
-      content: "Reed Richards",
+      
       imgUrl: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1722816000&semt=sph",
     },
     {
@@ -61,7 +60,7 @@ function App() {
     <>
       <NavBar />
       <div className="container">
-        <CardContainer cards={cardsData} />
+        <CardContainer cardProps={cardsData} />
       </div>
       <TradeSettings />
     </>
